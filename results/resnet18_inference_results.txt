@@ -1,0 +1,139 @@
+==================Terminal
+RN18C40_6_17_25_TP.py
+Total accuracy: 78.37%
+Overall Inference Time: 5.84 seconds
+Overall Throughput (images/sec): 700.43
+Steady Throughput (images/sec): 901.38
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.04 GB
+GPU Memory Reserved: 0.68 GB
+
+
+
+================All blocks in for loop
+Total accuracy: 78.37%
+Overall Inference Time: 6.66 seconds
+Overall Throughput (images/sec): 613.94
+Steady Throughput (images/sec): 714.62
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.65 seconds
+Overall Throughput (images/sec): 615.06
+Steady Throughput (images/sec): 746.67
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.55 seconds
+Overall Throughput (images/sec): 624.59
+Steady Throughput (images/sec): 706.27
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.53 seconds
+Overall Throughput (images/sec): 626.81
+Steady Throughput (images/sec): 737.76
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+
+==============Brake out block 4 form loop
+Total accuracy: 78.37%
+Overall Inference Time: 6.29 seconds
+Overall Throughput (images/sec): 650.25
+Steady Throughput (images/sec): 729.55
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.49 seconds
+Overall Throughput (images/sec): 630.51
+Steady Throughput (images/sec): 736.95
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.57 seconds
+Overall Throughput (images/sec): 622.21
+Steady Throughput (images/sec): 739.72
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.65 GB
+
+...
+===============Unrolled loops=================
+Total accuracy: 78.37%
+Overall Inference Time: 6.37 seconds
+Overall Throughput (images/sec): 642.30
+Steady Throughput (images/sec): 756.33
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.18 seconds
+Overall Throughput (images/sec): 661.70
+Steady Throughput (images/sec): 766.13
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.26 seconds
+Overall Throughput (images/sec): 653.34
+Steady Throughput (images/sec): 740.52
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.61 seconds
+Overall Throughput (images/sec): 618.59
+Steady Throughput (images/sec): 759.51
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.34 seconds
+Overall Throughput (images/sec): 645.16
+Steady Throughput (images/sec): 747.74
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 1.88 GB
+
+
+
+==============Reserved grouth=============
+Total accuracy: 78.37%
+Overall Inference Time: 6.61 seconds
+Overall Throughput (images/sec): 619.16
+Steady Throughput (images/sec): 801.24
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 4.79 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.45 seconds
+Overall Throughput (images/sec): 634.61
+Steady Throughput (images/sec): 762.35
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 6.02 GB
+
+Total accuracy: 78.37%
+Overall Inference Time: 6.33 seconds
+Overall Throughput (images/sec): 646.36
+Steady Throughput (images/sec): 738.16
+The batch size is: 64, the subset of data is: 4091, the number of batches considered in throughput is: 54
+GPU Memory Allocated: 0.48 GB
+GPU Memory Reserved: 7.33 GB

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Data (CIFAR-10 / ImageNet downloads)
+data/
+
+# Generated results (keep only resnet18_inference_results.txt)
+results/train_metrics.csv
+results/eval_metrics.csv
+results/eval_metrics.json
+results/checkpoint_epoch*.pt
+
+# Environment
+.venv/
+venv/
+env/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
