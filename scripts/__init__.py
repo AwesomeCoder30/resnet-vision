@@ -1,7 +1,3 @@
-"""
-Scripts: training, evaluation, and metrics for ResNet-18 vision project.
-"""
-
 from .config import (
     BATCH_SIZE,
     DATASET,

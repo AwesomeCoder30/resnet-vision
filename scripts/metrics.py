@@ -1,28 +1,20 @@
-"""
-Metrics: save training and evaluation results to results/.
-Results directory is at project root (parent of this package).
-"""
-
 from __future__ import annotations
 
 import csv
 import json
 from pathlib import Path
 
-# Project root = parent of package; results/ lives there
 _PACKAGE_ROOT = Path(__file__).resolve().parent
 _PROJECT_ROOT = _PACKAGE_ROOT.parent
 RESULTS_DIR = _PROJECT_ROOT / "results"
 
 
 def ensure_results_dir() -> Path:
-    """Create results directory if needed."""
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     return RESULTS_DIR
 
 
 def save_train_metrics(history: list[dict]) -> Path:
-    """Write per-epoch train metrics to results/train_metrics.csv."""
     ensure_results_dir()
     path = RESULTS_DIR / "train_metrics.csv"
     if not history:
@@ -37,7 +29,6 @@ def save_train_metrics(history: list[dict]) -> Path:
 
 
 def save_eval_metrics(metrics: dict) -> Path:
-    """Write eval run to results/eval_metrics.csv and results/eval_metrics.json."""
     ensure_results_dir()
     csv_path = RESULTS_DIR / "eval_metrics.csv"
     fieldnames = [
@@ -64,6 +55,5 @@ def save_eval_metrics(metrics: dict) -> Path:
 
 
 def checkpoint_path(epoch: int) -> Path:
-    """Convention for checkpoint files: results/checkpoint_epoch{N}.pt."""
     ensure_results_dir()
     return RESULTS_DIR / f"checkpoint_epoch{epoch}.pt"

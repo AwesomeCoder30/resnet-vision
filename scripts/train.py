@@ -1,8 +1,3 @@
-"""
-Training loop: forward, loss, backward, step.
-Demonstrates tensor flow and gradient updates.
-"""
-
 from __future__ import annotations
 
 import torch
@@ -20,9 +15,6 @@ def train_one_epoch(
     optimizer: torch.optim.Optimizer,
     epoch: int,
 ) -> dict:
-    """
-    Run one training epoch. Returns metrics dict (loss, optional accuracy).
-    """
     model.train()
     running_loss = 0.0
     correct = 0
@@ -53,9 +45,6 @@ def train(
     train_loader: DataLoader,
     num_epochs: int,
 ) -> list[dict]:
-    """
-    Full training run. Returns list of per-epoch metrics.
-    """
     set_seed()
     criterion = nn.CrossEntropyLoss()
     optimizer = Adam(model.parameters(), lr=LEARNING_RATE)

@@ -19,10 +19,8 @@ resnet_vision/                    # Project root
 │   ├── evaluate.py               # Eval loop (accuracy, throughput)
 │   └── metrics.py                # Save metrics and checkpoint paths
 └── results/
-    └── resnet18_inference_results.txt   # Prior-run results (committed)
+    └── resnet18_inference_results.txt   # Prior-run results
 ```
-
-Generated at run time (not committed): `data/` (downloaded datasets), `results/train_metrics.csv`, `results/eval_metrics.csv`, `results/eval_metrics.json`, `results/checkpoint_epoch*.pt`. See `.gitignore`.
 
 ## Setup
 

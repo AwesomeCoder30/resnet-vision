@@ -1,9 +1,3 @@
-"""
-Data loading: datasets and DataLoaders.
-Supports CIFAR-10 (portable) and ImageFolder (ImageNet-style).
-Batch tensors: (B, 3, H, W) for images, (B,) for labels.
-"""
-
 from __future__ import annotations
 
 from typing import Optional
@@ -22,14 +16,11 @@ from .config import (
     RANDOM_SEED,
 )
 
-
-# ImageNet normalization (standard for pretrained ResNet)
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD = [0.229, 0.224, 0.225]
 
 
 def get_imagenet_transform():
-    """Transforms for 224x224 input (ImageNet standard). Output shape: (3, 224, 224)."""
     return transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
@@ -39,7 +30,6 @@ def get_imagenet_transform():
 
 
 def get_cifar10_transform():
-    """CIFAR-10 resized to 224x224 for ResNet. Output shape: (3, 224, 224)."""
     return transforms.Compose([
         transforms.Resize(224),
         transforms.ToTensor(),
@@ -48,9 +38,6 @@ def get_cifar10_transform():
 
 
 def get_train_loader():
-    """
-    Train DataLoader. Batches: images (B, 3, H, W), labels (B,).
-    """
     if DATASET == "cifar10":
         transform = get_cifar10_transform()
         dataset = CIFAR10(
@@ -78,10 +65,6 @@ def get_train_loader():
 
 
 def get_eval_loader(subset_size: Optional[int] = None):
-    """
-    Eval DataLoader. Batches: images (B, 3, H, W), labels (B,).
-    If subset_size is set, use a random subset for faster eval.
-    """
     generator = torch.Generator().manual_seed(RANDOM_SEED)
 
     if DATASET == "cifar10":

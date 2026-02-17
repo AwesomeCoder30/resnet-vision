@@ -1,8 +1,3 @@
-"""
-Evaluation: accuracy, throughput, and latency.
-Uses warm-up/cool-down batches for steady-state throughput.
-"""
-
 import time
 
 import torch
@@ -17,14 +12,7 @@ from .config import (
 )
 
 
-def evaluate(
-    model: nn.Module,
-    loader: DataLoader,
-) -> dict:
-    """
-    Run evaluation. Returns dict with accuracy, throughput_images_per_sec,
-    total_time_sec, steady_state_throughput (excluding warm-up/cool-down).
-    """
+def evaluate(model: nn.Module, loader: DataLoader) -> dict:
     model.eval()
     correct = 0
     total = 0

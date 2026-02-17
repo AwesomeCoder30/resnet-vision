@@ -1,15 +1,9 @@
-"""
-Entrypoint: train and/or evaluate ResNet-18.
-Run from project root: python run.py train | python run.py evaluate | python run.py train --evaluate
-"""
-
 import argparse
 import sys
 from pathlib import Path
 
 import torch
 
-# Project root on path so "scripts" package is found
 _project_root = Path(__file__).resolve().parent
 if str(_project_root) not in sys.path:
     sys.path.insert(0, str(_project_root))
